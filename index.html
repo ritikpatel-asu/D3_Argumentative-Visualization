@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argumentative Visualization</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>    
+</head>
+
+<body>
+    <div class="header text-center p-3 mb-3">
+        <h1>Argumentative Visualization</h1>
+        <b><p>Name: Ritik Patel | Email: rpate209@asu.edu</p></b>
+    </div>
+    <hr>
+    
+    <div class="container mb-4">
+        <div class="card p-3 shadow">
+            <h2 class="text-center"><b>Lionel Messi vs Cristiano Ronaldo</b></h2>
+            <p style="text-align:justify;">
+                The debate over who is the greatest football player of all time often centers around two names: <b><i>Lionel Messi</i></b> and <b><i>Cristiano Ronaldo</i></b>. 
+                Both players have dominated the football world for over a decade and their contrasting playing styles have fueled intense discussions 
+                among fans and experts alike. Messi is known for his exceptional dribbling skills, creativity and vision, while Ronaldo is celebrated 
+                for his athleticism, goal-scoring prowess and versatility. This comparison is controversial because their styles are so different, 
+                making it challenging to determine who is superior. Messi's artistry and playmaking are in stark contrast to Ronaldo's physical dominance 
+                and consistency, which leads to the ongoing debate about which qualities are most important in defining greatness.
+            </p>
+            <p style="text-align:justify;">
+                The controversy also arises from their individual successes and the varying ways they have achieved greatness. Messi's unparalleled playmaking 
+                and vision have earned him numerous Ballon d'Or titles, while Ronaldo's goal-scoring records and success in multiple leagues highlight his adaptability. 
+                Both have achieved monumental success, yet their distinct styles lead to conflicting opinions on which approach is more valuable. 
+                As a result, the Messi vs. Ronaldo debate remains one of the most contentious and polarizing discussions in modern football.
+                <br><br>
+                <b>Dataset source:</b> <a href="https://www.kaggle.com/datasets/maso0dahmed/football-players-data" target="_blank">https://www.kaggle.com/datasets/maso0dahmed/football-players-data</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h3 class="text-center"><b>Messi: The Playmaker</b></h3>
+                    <svg id="left-visualization" width="100%" height="400"></svg>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h3 class="text-center"><b>Ronaldo: The Goal Machine</b></h3>
+                    <svg id="right-visualization" width="100%" height="400"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="card p-3 shadow">
+            <h4>Introduction</h4>
+            <p style="text-align:justify;">
+                The Messi vs Ronaldo debate extends beyond football, touching upon cultural codes and personal biases. 
+                This visualization project aims to provide an objective lens through which we can explore their remarkable careers. Using radar charts, 
+                we compare key attributes such as Agility, Balance, Vision and more to highlight the unique qualities that define their greatness. 
+                The charts allow us to visualize their strengths side by side, offering a clear and engaging perspective on their abilities. By presenting data-driven 
+                narratives, this visualization not only celebrates their extraordinary talents but also encourages a deeper understanding of why they are both considered 
+                football legends despite their strikingly different approaches to the game.
+            </p><br>
+            <h4>Messi's Visualization</h4>
+            <p style="text-align:justify;">
+                Lionel Messi's radar chart reflects his extraordinary technical mastery and creativity which have cemented his place as one of football’s most 
+                graceful and ingenious players. The visualization highlights his exceptional dribbling ability, balance and agility, showcasing his fluid movement 
+                and ability to navigate through tight defensive spaces. His vision and precise short passing emphasize his role as a playmaker, orchestrating attacks
+                 and creating opportunities with pinpoint accuracy. Messi’s ability to curve his shots and deliver precise free kicks demonstrates his finesse and 
+                 technical proficiency in high-pressure moments. While his defensive aggression and aerial attributes are comparatively modest, these are overshadowed 
+                 by his unmatched skills in areas that define the beauty of the game. The visualization captures Messi as an artist on the pitch, whose strengths lie in 
+                 his creative genius and ability to turn games with moments of brilliance.
+            </p><br>
+            <h4>Ronaldo's Visualization</h4>
+            <p style="text-align:justify;">
+                Cristiano Ronaldo’s radar chart exemplifies his physical dominance, goal-scoring ability and relentless drive to succeed. 
+                The visualization emphasizes his incredible power in shots, precision with headers and exceptional jumping ability, traits that
+                 make him a formidable force in the air and a constant threat in the box. His agility and dribbling highlight his versatility 
+                 allowing him to beat defenders and exploit space with speed and precision. Ronaldo’s vision and passing are solid, supporting his 
+                 adaptability as both a finisher and creator. His aggressive playing style and physical attributes showcase his competitive edge and 
+                 determination to excel. While Ronaldo’s finesse in areas like free-kick accuracy and ball control is commendable, his strengths lie in 
+                 his athleticism and clinical finishing. The visualization portrays Ronaldo as a powerhouse, whose attributes embody efficiency, resilience
+                  and the pursuit of greatness.
+            </p><br>
+            <h4>Rhetorics</h4>
+            <ul>
+                <li style="text-align:justify;"><strong>Omission:</strong> The visualizations focus on specific attributes that highlight Messi and Ronaldo's strengths, 
+                    intentionally omitting less relevant metrics like defensive skills and team dynamics. This selective emphasis steers attention 
+                    toward their most celebrated abilities, shaping the narrative around their offensive prowess and creative impact on the game.</li>
+                <li style="text-align:justify;"><strong>Anchoring:</strong> The radar charts anchor the audience’s perception of Messi and Ronaldo by visually accentuating their 
+                    standout traits. Messi’s chart emphasizes his unparalleled creativity and finesse while Ronaldo’s highlights his physical dominance and 
+                    goal-scoring efficiency anchoring viewers’ understanding of their contrasting playing styles.</li>
+                <li style="text-align:justify;"><strong>Comparison:</strong> By plotting Messi’s and Ronaldo’s attributes side by side, the visualizations facilitate direct comparison
+                    showcasing how each player excels in distinct areas. This rhetorical device underscores their individuality, presenting Messi as 
+                    the ultimate creator and Ronaldo as the supreme finisher.</li>
+                <li style="text-align:justify;"><strong>Cultural Codes:</strong> The visualization taps into cultural codes associated with football greatness: Messi is framed as the artist 
+                    relying on skill and elegance, while Ronaldo is portrayed as the athlete, defined by power and determination. These archetypes resonate with fans' 
+                    preconceptions, enriching the narrative with familiar symbolic associations.</li>
+            </ul><br>
+            <h4>Personal Opinion</h4>
+            <p style="text-align:justify;">
+                While both Lionel Messi and Cristiano Ronaldo have achieved unparalleled greatness in football, my preference leans slightly toward Messi. 
+                His artistry on the pitch, characterized by breathtaking dribbles, precise passing and creative vision embodies the beauty of the game. 
+                Messi’s ability to orchestrate attacks and turn ordinary moments into extraordinary ones is a testament to his unique genius play. Watching him 
+                play feels like witnessing a master artist at work, crafting moments that transcend statistics.
+                Ronaldo’s relentless drive, physical dominance and incredible finishing abilities are undeniably remarkable. 
+                His work ethic and versatility have set benchmarks for modern athletes. However, Messi’s natural elegance and seamless ability 
+                to adapt to any situation, often elevating his team with moments of sheer brilliance, resonate more deeply with my appreciation of football.
+                 For me, Messi represents the purest form of football, where talent and creativity merge effortlessly.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
